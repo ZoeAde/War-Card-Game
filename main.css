@@ -1,0 +1,21 @@
+body {
+  background-image: url("http://www.opsecnews.com/wp-content/uploads/2013/05/largeLAST-TORPEDO.jpg");
+  background-size: 100%;
+}
+
+.btn {
+  margin-top: 28px;
+}
+
+.btn:hover {
+  background-color: blue;
+}
+
+.card {
+  height: 96px;
+  width: 72px;
+  float: left;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px;
+}

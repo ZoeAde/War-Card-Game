@@ -57,7 +57,7 @@ var deckCopy = deck.slice();
 var deck1 = [];
 var deck2 = [];
 
-function shuffle(shuffledCards) {
+function shuffle(shuffleCards) {
   var currentIndex = deckCopy.length;
   var tempValue, randomIndex;
   while (0 !== currentIndex) {
@@ -133,14 +133,6 @@ function miniGame(card1, card2) {
     }
 }
 
-function playGame () {
-  splitDeck(shuffle(deckCopy));
-  while (deck1.length > 0 && deck2.length > 0) {
-    moveCardsToWinner(drawCards([deck1, deck2]));
-  }
-  declareWinner();
-  confirmPlay();
-}
 
 function declareWinner() {
   if (deck1.length > 0) {
@@ -158,4 +150,12 @@ function confirmPlay() {
       }
 }
 
+function playGame () {
+  splitDeck(shuffle(deckCopy));
+  while (deck1.length > 0 && deck2.length > 0) {
+    moveCardsToWinner(drawCards([deck1, deck2]));
+  }
+  declareWinner();
+  confirmPlay();
+}
 
