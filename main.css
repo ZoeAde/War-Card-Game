@@ -11,11 +11,13 @@ body {
   background-color: blue;
 }
 
-.card {
-  height: 96px;
-  width: 72px;
-  float: left;
-  margin-left: 30px;
-  margin-bottom: 10px;
-  box-shadow: 5px 5px;
+.cards {
+  max-height: 350px;
+  margin: 50px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
 }

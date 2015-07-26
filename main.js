@@ -53,10 +53,6 @@ var deck = [
   {card: ["🃂"], score: 2 },
 ];
 
-var deckCopy = deck.slice();
-var deck1 = [];
-var deck2 = [];
-
 function shuffle(shuffleCards) {
   var currentIndex = deckCopy.length;
   var tempValue, randomIndex;
