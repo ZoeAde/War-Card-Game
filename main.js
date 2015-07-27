@@ -146,12 +146,12 @@ function confirmPlay() {
       }
 }
 
-function startGame () {
-  splitDeck(shuffle(deckCopy));
+// function startGame () {
+//   splitDeck(shuffle(deckCopy));
   // while (deck1.length > 0 && deck2.length > 0) {
   //   moveCardsToWinner(drawCards([deck1, deck2]));
   // }
   // declareWinner();
   // confirmPlay();
-}
+
 

@@ -12,21 +12,28 @@
         <button id="play" class="btn btn-success btn-lrg">Play War</button>
       </div>
       <div class="row">
+        <div>
+          <p id="winnerAlert"></p>
+        </div>
+      </div>
+      <div class="row">
       <h3 class="col-xs-3" id="player1">Player1</h3>
       <h3 class="col-xs-3" id="player2">Player2</h3>
       </div>
       <div class="row">
-        <img class="cards col-xs-4" id="playerCard1" src="redCard.jpg">
-        <img class="cards col-xs-4" id="playerCard2" src="redCard.jpg">
+        <div class="cardReplace" id="player1card">
+          <img class="cards" id="playerCard1" src="redCard.jpg">
+        </div>
+        <div class="cardReplace" id="player2card">
+          <img class="cards" id="playerCard2" src="redCard.jpg">
+        </div>
       </div>
       <div class="row">
-        <table class="col-xs-3">
-          <th>Total Cards: </th>
-            <td id="score1"></td>
-        </table>
-        <table class="col-xs offset2">
+        <table>
           <th>Total Cards: </th>
             <td id="score2"></td>
+          <th>Total Cards: </th>
+            <td id="score1"></td>
         </table>
       </div>
     </div>
