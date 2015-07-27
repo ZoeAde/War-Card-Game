@@ -64,7 +64,7 @@ function shuffle(shuffleCards) {
     deckCopy[randomIndex] = tempValue;
   }
   return deckCopy;
-};
+}
 
 function splitDeck(shuffledDeck) {
   splitDeckArray = [];
@@ -72,7 +72,7 @@ function splitDeck(shuffledDeck) {
   deck2 = deckCopy.slice(26, 53);
   splitDeckArray.push(deck1, deck2);
   return splitDeckArray;
-};
+}
 
 function drawCards(handArray) {
   newCardsArray = [];
@@ -146,12 +146,12 @@ function confirmPlay() {
       }
 }
 
-function playGame () {
+function startGame () {
   splitDeck(shuffle(deckCopy));
-  while (deck1.length > 0 && deck2.length > 0) {
-    moveCardsToWinner(drawCards([deck1, deck2]));
-  }
-  declareWinner();
-  confirmPlay();
+  // while (deck1.length > 0 && deck2.length > 0) {
+  //   moveCardsToWinner(drawCards([deck1, deck2]));
+  // }
+  // declareWinner();
+  // confirmPlay();
 }
 

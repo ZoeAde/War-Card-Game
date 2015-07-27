@@ -1,10 +1,11 @@
-body {
-  background-image: url("http://www.opsecnews.com/wp-content/uploads/2013/05/largeLAST-TORPEDO.jpg");
+/*body {
+ background-image: url("http://www.opsecnews.com/wp-content/uploads/2013/05/largeLAST-TORPEDO.jpg");
   background-size: 100%;
-}
+}*/
 
 .btn {
   margin-top: 28px;
+  margin-bottom: 50px ;
 }
 
 .btn:hover {
@@ -19,5 +20,8 @@ body {
 h3 {
   font-weight: bold;
   font-size: 18px;
-  color: white;
+}
+
+p {
+  margin-top: 60px;
 }
