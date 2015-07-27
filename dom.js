@@ -22,20 +22,6 @@ var namePrompt = playBtn.addEventListener("click", function() {
     return splitCards;
 });
 
-// //Shuffle Button
-// var shuffleClick = playBtn.addEventListener("click", function() {
-//     var shuffledCardDeck = shuffle(deckCopy);
-//     console.log(shuffledCardDeck);
-//     return shuffledCardDeck;
-//   }
-// );
-
-// //Deal Button
-// var dealClick = dealBtn.addEventListener("click", function() {
-//   var splittingDecks = splitDeck(deckCopy);
-//   console.log(splittingDecks);
-//   return splittingDecks;
-// });
 
 // Draw Cards
 var cardClick = playerOneCard.addEventListener("click", function(namePrompt) {
