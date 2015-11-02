@@ -53,6 +53,8 @@ var deck = [
   {card: ["🃂"], score: 2 },
 ];
 
+var deckCopy = deck.slice();
+
 function shuffle(shuffleCards) {
   var currentIndex = deckCopy.length;
   var tempValue, randomIndex;
@@ -63,6 +65,7 @@ function shuffle(shuffleCards) {
     deckCopy[currentIndex] = deckCopy[randomIndex];
     deckCopy[randomIndex] = tempValue;
   }
+  console.log(deckCopy);
   return deckCopy;
 }
 
@@ -76,8 +79,8 @@ function splitDeck(shuffledDeck) {
 
 function drawCards(handArray) {
   newCardsArray = [];
-  var card1 = handArray[0].shift();
-  var card2 = handArray[1].shift();
+  card1 = handArray[0].shift();
+  card2 = handArray[1].shift();
   newCardsArray.push(card1, card2);
   return newCardsArray;
 }
