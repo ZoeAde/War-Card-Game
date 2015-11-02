@@ -34,3 +34,7 @@ p {
   margin: auto;
   text-align: center;
 }
+
+.cardSize {
+  font-size: 18em;
+}

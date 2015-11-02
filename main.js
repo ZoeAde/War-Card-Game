@@ -139,19 +139,20 @@ function declareWinner() {
   }
 }
 
-function confirmPlay() {
-    var again = confirm("Play again?");
-      if (again === true) {
-        playGame();
-      }
+// function confirmPlay() {
+//     var again = confirm("Play again?");
+//       if (again === true) {
+//         playGame();
+//       }
+// }
+
+function playRound () {
+  if (deck1.length > 0 && deck2.length > 0) {
+    moveCardsToWinner(drawCards([deck1, deck2]));
+  }
+  else {
+    declareWinner();
+    // confirmPlay();
+  }
 }
-
-// function startGame () {
-//   splitDeck(shuffle(deckCopy));
-  // while (deck1.length > 0 && deck2.length > 0) {
-  //   moveCardsToWinner(drawCards([deck1, deck2]));
-  // }
-  // declareWinner();
-  // confirmPlay();
-
 

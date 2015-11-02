@@ -1,13 +1,11 @@
+var startBtn = document.getElementById("start");
 var playBtn = document.getElementById("play");
 var playerOne = document.getElementById("player1");
 var playerTwo = document.getElementById("player2");
 var playerOneCard = document.getElementById("playerCard1");
 var playerTwoCard = document.getElementById("playerCard2");
 
-var cardReplace1 = document.getElementById("player1card");
-var cardReplace2 = document.getElementById("player2card");
-
-var roundWinner = document.getElementById("winnderAlert");
+var roundWinner = document.getElementById("winnerAlert");
 var playerOneScore = document.getElementById("score1");
 var playerTwoScore = document.getElementById("score2");
 
@@ -23,49 +21,49 @@ var name = prompt("What is your name?");
 playerOne.innerHTML = name;
 playerTwo.innerHTML = "Computer";
 
-
-var flipCard = function() {
-
-
-}
-
 var scoreKeeper = function() {
   while (splitHands[0] > 0 && splitHands[1] > 0) {
-    playerOneScore.innerHTML = (splitHands[0].length);
-    playerTwoScore.innerHTML = (splitHands[1].length);
+    playerOneScore.innerHTML = splitHands[0].length;
+    playerTwoScore.innerHTML = splitHands[1].length;
   }
 };
 
-//click play button to prompt names
-var startGameClick = playBtn.addEventListener("click", function() {
+//click start button to shuffle cards and begin game
+var startGameClick = startBtn.addEventListener("click", function() {
     var shuffledDeck = shuffle(deckCopy);
     console.log(shuffledDeck);
     var splitHands = splitDeck(shuffledDeck);
     console.log(splitHands);
     card1 = splitHands[0].shift();
     card2 = splitHands[1].shift();
+    playerCard1.innerHTML = card1.card;
+    playerCard2.innerHTML = card2.card;
     newCardsArray.push(card1, card2);
+    playerOneScore.innerHTML = 26;
+    playerTwoScore.innerHTML = 26;
     return newCardsArray;
 });
 
 
 
-var firstClick = playerOneCard.addEventListener("click", function() {
-  cardReplace1.innerHTML = card1.card;
-  cardReplace2.innerHTML = card2.card;
+var flipCards = playBtn.addEventListener("click", function() {
+  playerCard1.innerHTML = card1.card;
+  playerCard2.innerHTML = card2.card;
   moveCardsToWinner(newCardsArray);
+  // playerOneScore.innerHTML = splitHands[0].length;
+  // playerOneScore.innerHTML = splitHands[1].length;
 });
 
 
 // Draw Cards
-var cardClick = cardReplace1.addEventListener("click", function() {
-  cardReplace1.innerHTML = card1.card;
-  cardReplace2.innerHTML = card2.card;
+var cardClick = playBtn.addEventListener("click", function() {
+  playerCard1.innerHTML = card1.card;
+  playerCard2.innerHTML = card2.card;
   moveCardsToWinner(newCardsArray);
 });
 
 
-
+scoreKeeper();
 
 // //Play Again Button
 // playAgainBtn.innerHTML = "Play Again?";
