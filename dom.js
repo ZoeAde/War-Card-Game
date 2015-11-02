@@ -17,18 +17,14 @@ playerOne.innerHTML = name;
 playerTwo.innerHTML = "Computer";
 
 var scoreKeeper = function() {
-  while (splitDeckArray[0] > 0 && splitDeckArray[1] > 0) {
     playerOneScore.innerHTML = splitDeckArray[0].length;
     playerTwoScore.innerHTML = splitDeckArray[1].length;
-  }
 };
 
 //click start button to shuffle cards and begin game
 var shuffleClick = shuffleBtn.addEventListener("click", function() {
     splitDeck(shuffle(deckCopy));
-
-    playerOneScore.innerHTML = 26;
-    playerTwoScore.innerHTML = 26;
+    scoreKeeper();
     roundWinner.innerHTML = "Ok, you're ready to play! Click the FLIP button to start the game.";
 });
 
