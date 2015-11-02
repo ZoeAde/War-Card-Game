@@ -1,7 +1,6 @@
-/*body {
- background-image: url("http://www.opsecnews.com/wp-content/uploads/2013/05/largeLAST-TORPEDO.jpg");
-  background-size: 100%;
-}*/
+body {
+  background-color: #B3B3B3;
+}
 
 .btn {
   margin-top: 28px;
@@ -13,28 +12,38 @@
 }
 
 h3 {
+  text-transform: uppercase;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 3em;
+  color: #B3B3B3;
 }
 
-p {
-  margin-top: 60px;
-}
-
-.cardReplace, .cards{
-  font-size: 370px;
-  background-color: white;
-  max-height: 350px;
-  margin: 20px;
-  margin-bottom: 50px;
-  display: inline-block;
-}
-
-.table {
-  margin: auto;
-  text-align: center;
+h6 {
+  color: #B3B3B3;
+  font-size: 1em;
 }
 
 .cardSize {
-  font-size: 18em;
+  margin-top: -0.19em;
+  font-size: 50vh;
+}
+
+#header {
+  background-color: #222;
+  height: 12vh;
+  width: 100%;
+}
+
+#subheader {
+  background-color: #222;
+  height: 12vh;
+  width: 100%;
+}
+
+#footer {
+  position: absolute;
+  height: 18vh;
+  width: 100%;
+  bottom: 0;
+  background-image: url("http://www.clker.com/cliparts/8/0/9/c/1209672947171792310StefanvonHalenbach_USS-Mertz.svg.med.png")
 }
